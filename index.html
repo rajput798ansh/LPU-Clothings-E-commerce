@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LPU Clothings</title>
+    <link rel="stylesheet" href="Web.css">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <h1>Trends</h1>
+            </div>
+            <ul>
+                <li>
+                    <a id="home" onclick="homes()">Home</a>
+                    <a id="shop" onclick="shops()">Shops</a>
+                    <a id="blog" onclick="blogs()">Blog</a>
+                    <a id="about" onclick="abouts()">About</a>
+                    <a id="contact" onclick="contacts()">Contact</a>
+                    <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- mainpage -->
+
+        <div class="main">
+            <div class="mainText">
+                <h2>Trends</h2>
+                <h1 class="top">Super Value Deals</h1>
+                <h1>On All Products</h1>
+                <p>Look Good, Feel Better, Choose LPU.</p>
+                <button>Explore</button>
+            </div>
+            <img src="m3.png" alt="Fashion Deals">
+        </div>
+
+        <!-- cards -->
+
+        <div class="trend">
+            <div class="head">
+                <h1>Trends <span>Men's Wear</span></h1>
+            </div>
+            <div class="card">
+                <div class="crd">
+                    <img src="srt1.webp" alt="Men's Shirt" onclick="show(this)">
+                    <div class="crdText">
+                        <h2>Cotton Trending Shirts</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i> <br>
+                        <button>Add to Cart</button>
+                    </div>
+                 </div>
+                 <!-- Additional Men Wear Cards -->
+                <!-- Repeat similar structure as above for more cards -->
+            </div>
+        </div>
+
+        <!-- Women Card -->
+
+        <div class="trend" id="trendSec">
+            <div class="head">
+                <h1>Trends <span>Women's Wear</span></h1>
+            </div>
+            <div class="card">
+                <div class="crd">
+                    <img src="wn4.webp" alt="Women's Top" onclick="show(this)">
+                    <div class="crdText">
+                        <h2>Trending Girl Tops</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i> <br>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Additional Women Wear Cards -->
+                <!-- Repeat similar structure as above for more cards -->
+            </div>
+        </div>
+
+        <!-- about us -->
+
+        <div class="about">
+            <div class="aboutus">
+                <h1>Know Us</h1>
+                <p>Welcome to LPU Clothings, your go-to destination for stylish, high-quality clothing that reflects your personality and values.</p>
+            </div>
+
+            <div class="me">
+                <img src="lap.png" alt="About Us">
+                <div class="aboutText">
+                    <h1>Who We Are</h1>
+                    <p>Welcome to LPU Clothings, your go-to destination for stylish, high-quality clothing that reflects your personality and values. Established in 2023, we’re dedicated to creating an online shopping experience that’s as unique as our customers. At LPU Clothings, we blend modern style with uncompromising quality to bring you clothing that feels as good as it looks.</p>
+                    <p>Our mission is simple: to make fashion accessible, sustainable, and meaningful. We craft pieces that inspire confidence and support a greener future. Every item in our collection is designed with care, ensuring trend-setting style and durability.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact -->
+
+        <div class="contact">
+            <div class="contactus">
+                <h1>Let's Connect</h1>
+                <p>LPU Clothings</p>
+            </div>
+
+            <div class="contactMe">
+                <div class="contactText">
+                    <h1>Visit Our Office or Contact Us Today</h1>
+                    <p>Address: Jalandhar - Delhi, Grand Trunk Rd, Phagwara, Punjab 144411</p>
+                    <p>Contact: anshsingh001@gmail.com</p>
+                    <p>Number: 9198695456</p>
+                </div>
+                <img src="map.PNG" alt="Map Location">
+            </div>
+
+            <div class="form">
+                <h1>Connect with Us. Fill Form</h1>
+                <input type="text" placeholder="Enter Name"><br>
+                <input type="email" placeholder="Enter Email"><br>
+                <input type="tel" placeholder="Enter Phone"><br>
+                <input type="text" placeholder="Message"><br>
+                <button>Submit</button>
+            </div>
+        </div>
+
+        <!-- cart -->
+
+        <div class="cart">
+            <img id="newImg" src="" alt="Cart Item">
+            <div class="cartText">
+                <h1>Trends Offer: Trending Shop Now</h1>
+                <h2>Special Price</h2>
+                <h2>$11</h2>
+                <p>Elevate your style with our latest collection of trendy apparel.</p>
+                <p>Crafted with premium materials to ensure comfort and durability.</p>
+                <p>Perfect for any occasion—casual, formal, or something in between!</p>
+                <div class="btn">
+                    <button>Buy Now</button>
+                    <button onclick="addCart()">Add to Cart</button>
+                </div>
+                <button class="back">Back</button>
+            </div>
+        </div>
+
+        <!-- blogs -->
+        <div class="trends">
+            <div class="head">
+                <h1>Trends <span>Men's Wear</span></h1>
+            </div>
+            <div class="card">
+                <div class="blog">
+                    <img src="tr1.webp" alt="Fashion Blog">
+                    <div class="blogText">
+                        <h2>Trending Girl Clothes</h2>
+                        <p>Discover the latest in fashion trends and find out how to style your wardrobe with ease.</p>
+                        <a href="https://influencermarketinghub.com/best-fashion-blogs/">Read More</a>
+                    </div>
+                </div>
+                <div class="blog">
+                    <img src="tr3.webp" alt="Fashion Blog">
+                    <div class="blogText">
+                        <h2>Trending Boys Clothes</h2>
+                        <p>Stay updated with fashion tips and explore clothing ideas to enhance your style.</p>
+                        <a href="https://www.apetogentleman.com/">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter -->
+
+        <div class="letter">
+            <div class="letterText">
+                <h1>Sign Up for Newsletter</h1>
+                <p>Subscribe to stay updated with the latest trends, special offers, and exclusive discounts.</p>
+            </div>
+            <div class="inp">
+                <input type="email" placeholder="Enter Email">
+                <button>Sign Up</button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <div class="footer">
+            <div class="footerText">
+                <h2>Trends</h2>
+                <p>Service</p>
+                <p>Customer</p>
+                <p>Satisfaction</p>
+            </div>
+            <div class="footerText">
+                <h2>About Us</h2>
+                <p>Address: Jalandhar - Delhi, Grand Trunk Rd, Phagwara, Punjab 144411</p>
+                <p>Service: Clothings</p>
+                <p>Location: Punjab</p>
+                <p>Privacy</p>
+            </div>
+            <div class="footerText">
+                <h2>Contact</h2>
+                <p>Email: anshsingh001@gmail.com</p>
+                <p>Contact: +91 9198695456</p>
+                <p>Number: +91 6270366502</p>
+            </div>
+        </div>
+    </div>
+    <script src="Web.js"></script>
+</body>
+
+</html>
